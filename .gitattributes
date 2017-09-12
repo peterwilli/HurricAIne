@@ -8,3 +8,5 @@ HurricaneData/WDICountry-Series.csv filter=lfs diff=lfs merge=lfs -text
 HurricaneData/WDICountry.csv filter=lfs diff=lfs merge=lfs -text
 HurricaneData/WDIFootNote.csv filter=lfs diff=lfs merge=lfs -text
 HurricaneData/WDISeries-Time.csv filter=lfs diff=lfs merge=lfs -text
+HurricaneData/PRSA_data_2010.1.1-2014.12.31.csv filter=lfs diff=lfs merge=lfs -text
+HurricaneData/Preprocessed/pollution.csv filter=lfs diff=lfs merge=lfs -text
