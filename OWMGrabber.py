@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[ ]:
+# In[1]:
 
 
 import pyowm
@@ -13,13 +13,13 @@ from shutil import move
 from more_itertools import unique_everseen
 
 
-# In[ ]:
+# In[2]:
 
 
 csv_path = "HurricaneData/owm_houston.csv"
 
 
-# In[ ]:
+# In[3]:
 
 
 with open('config.yml') as f:
@@ -27,12 +27,12 @@ with open('config.yml') as f:
     config = yaml.safe_load(f)
 
 
-# In[ ]:
+# In[4]:
 
 
 while True:
     owm = pyowm.OWM(config['owm_api_key'])  # You MUST provide a valid API key
-    fc = owm.daily_forecast('Texas')
+    fc = owm.daily_forecast('Texas', limit=16)
     f = fc.get_forecast()
     file_exists = os.path.isfile(csv_path)
     headers = ['timestamp', 'Max.TemperatureF', 'Min.TemperatureF', 'status_short', 'status', 'wind_speed', 'wind_dir', 'cloud_coverage', 'humidity', 'pressure', 'sea_level', 'rain', 'snow']
