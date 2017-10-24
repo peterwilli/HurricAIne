@@ -1,5 +1,5 @@
 # HurricaneAI
-Trying out Hurricane Prediction for my talk at Big Data Summit in Amsterdam
+Trying out Hurricane Prediction for my talk at Isense Big Data Summit 
 
 # How to install
 
